@@ -18,7 +18,7 @@ for file_name in file_names:
      course_pref_pos,
      student_pref_pos,
      course_2_group_size,
-     course_2_group_range) = read_excel_data(file_name)
+     course_2_group_range) = read_excel_data('data/' + file_name)
 
     num_of_students = len(students)
     num_of_courses = len(courses)
@@ -92,3 +92,4 @@ for file_name in file_names:
         print("Solution is not found")
         print(f"Total solving time:{solving_time_cg}, "
               f"solver's solving time: {solver_solving_time_cg}, ")
+
